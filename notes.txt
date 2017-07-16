@@ -1,0 +1,46 @@
+------------ Basics of running node -------------
+typing "node" in a folder provides access to the REPL, which is like the console.
+CTRL+C twice to exit the repl (doesnt close the cmd window)
+typing "code ./" in cmd opens VS Code and sets a project in the current directory (the ./ portion)
+can type "node index.js" to run the file specified
+node can run directories, index.js is the default file (can be over-written)
+"node ." runs the directory
+------------
+------------ Node Modules (Common JS) -------------
+require("./calculator"); the ./ is needed for rel pathing
+this is a synchronous loader
+case sensitivity doesnt matter on windows, but DOES MATTER on other systems
+running require again will not run it again, it is cached on the first load
+------------
+------------ Node example 1 -------------
+javascript is a single-thread language
+async process will continue running even if the program reaches the end of the script
+https://regex101.com/
+example text:
+document.txt
+sub/doc.txt
+sub\\doc.txt
+../server.js
+/home/nelson/finances
+sub/../../server.js
+
+regex: ^[.\/\\]|\.\.
+
+
+------------
+------------ Node example 2 -------------
+
+
+https://www.meetup.com/find/events/?allMeetups=true&radius=10&userFreeform=Boston%2C+Massachusetts%2C+USA&mcId=c2108&gcResults=Boston%2C+MA%2C+USA%3AUS%3AMassachusetts%3ASuffolk+County%3ABoston%3Anull%3Anull%3A42.3600825%3A-71.05888010000001&change=yes&eventFilter=mysugg
+
+
+#1
+https://api.meetup.com/2/open_events?&sign=true&photo-host=public&zip=02109&fields=max=4&sort=recommended&status=upcoming&order=trending&page=4&desc=true&only=group.name
+#2
+https://api.meetup.com/seattlejs?&sign=true&photo-host=public&only=members
+
+#3
+https://api.meetup.com/self/groups?&sign=true&photo-host=public&only=name
+
+#4
+https://api.meetup.com/find/venues?&sign=true&photo-host=public&zip=98104&text=swedish&radius=15&fields=max=4
